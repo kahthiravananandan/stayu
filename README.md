@@ -12,7 +12,7 @@
 
 ## Overview
 
-StayU solves a real problem at UKM: students have no reliable way to find and verify off-campus housing. The platform introduces a gatekeeping layer — landlords must register and submit documents before listing — and surfaces location data so students can make informed decisions.
+StayU solves a real problem at UKM: students have no reliable way to find and verify off-campus housing. The platform introduces a gatekeeping layer - landlords must register and submit documents before listing - and surfaces location data so students can make informed decisions.
 
 Built as a Final Year Project with a full SDLC approach: requirements gathering, ERD and normalisation, MVC architecture, implementation, and manual testing.
 
@@ -36,9 +36,9 @@ Built as a Final Year Project with a full SDLC approach: requirements gathering,
 ## Tech Stack
 
 ### Backend
-- **PHP 8** — custom MVC architecture (no framework). Front controller in `index.php` parses the URL and routes to the correct controller class.
-- **PDO** with prepared statements throughout — no raw queries, no SQL injection surface.
-- **Session-based RBAC** — `require_role()` helper in `helpers/rbac.php` reads `$_SESSION['role']` and redirects to 403 on mismatch.
+- **PHP 8** - custom MVC architecture (no framework). Front controller in `index.php` parses the URL and routes to the correct controller class.
+- **PDO** with prepared statements throughout - no raw queries, no SQL injection surface.
+- **Session-based RBAC** - `require_role()` helper in `helpers/rbac.php` reads `$_SESSION['role']` and redirects to 403 on mismatch.
 
 ### Security hardening
 - `session_regenerate_id(true)` on login
@@ -48,11 +48,11 @@ Built as a Final Year Project with a full SDLC approach: requirements gathering,
 - `password_hash(PASSWORD_DEFAULT)` (bcrypt) + `password_verify()`
 
 ### Database
-- **MySQL / MariaDB** (via XAMPP) — 10 tables, InnoDB engine, `utf8mb4` charset
-- **Firebase Realtime Database** — used exclusively for live chat messages (no chat history in MySQL)
+- **MySQL / MariaDB** (via XAMPP) - 10 tables, InnoDB engine, `utf8mb4` charset
+- **Firebase Realtime Database** - used exclusively for live chat messages (no chat history in MySQL)
 
 ### Frontend
-- Vanilla **HTML5, CSS3, JavaScript** — no frameworks, no npm
+- Vanilla **HTML5, CSS3, JavaScript** - no frameworks, no npm
 - **Google Maps JavaScript API** via CDN script tag
 - **Firebase SDK v10** via ESM CDN module imports in view files
 
