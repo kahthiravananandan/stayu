@@ -22,7 +22,7 @@ Built as a Final Year Project with a full SDLC approach: requirements gathering,
 
 | Area | What it does |
 |---|---|
-| **Authentication** | Secure login/register for three roles — student, owner (individual & corporate), admin |
+| **Authentication** | Secure login/register for three roles - student, owner (individual & corporate), admin |
 | **Property listings** | Owners post listings with photos, price, location, and amenities |
 | **Search & filter** | Students search by location, price range, and property type |
 | **Booking flow** | Students submit booking requests; owners accept or decline |
