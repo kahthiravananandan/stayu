@@ -1,0 +1,13 @@
+Options -Indexes
+RewriteEngine On
+
+# Block direct access to sensitive directories
+RewriteRule ^public/uploads/documents/ - [F,L]
+RewriteRule ^config/ - [F,L]
+RewriteRule ^app/ - [F,L]
+RewriteRule ^helpers/ - [F,L]
+
+# Route all requests through index.php (except real files/dirs)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

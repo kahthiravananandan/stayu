@@ -1,0 +1,30 @@
+# Claude Code local config — never commit
+.claude/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+.idea/
+.vscode/
+
+# Sensitive uploads — never commit IC / grant documents
+public/uploads/documents/*
+!public/uploads/documents/.htaccess
+!public/uploads/documents/.gitkeep
+
+# User-uploaded photos (generated at runtime, keep directory only)
+public/uploads/photos/*
+!public/uploads/photos/.gitkeep
+
+# Environment / local config overrides — real keys, never commit
+config/firebase.php
+config/maps.php
+
+# Node (not used in this project but excluded as a safeguard)
+node_modules/
+
+# XAMPP / PHP
+php_errors.log
+error_log
