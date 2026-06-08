@@ -115,21 +115,6 @@ http://localhost/stayu
 
 ---
 
-## Screenshots
-
-> *(Add screenshots here once the UI is complete — listing page, booking flow, chat window, admin panel)*
-
----
-
-## Roadmap
-
-- [ ] Deploy to a live host (in progress)
-- [ ] Add email notifications for booking status changes
-- [ ] Landlord analytics dashboard
-- [ ] Mobile-responsive layout pass
-
----
-
 ## Author
 
 **Kahthiravan Anandan** — [LinkedIn](https://linkedin.com/in/kahthiravananandan) · [Email](mailto:kahthiravananandan@gmail.com)
