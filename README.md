@@ -1,4 +1,4 @@
-# StayU — Verified Off-Campus Accommodation Platform
+# StayU - Verified Off-Campus Accommodation Platform
 
 > A full-stack web application connecting UKM students with verified landlords through property listings, search & filter, booking flows, and real-time chat.
 
